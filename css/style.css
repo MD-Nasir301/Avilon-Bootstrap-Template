@@ -622,3 +622,109 @@ img.product-screen3 {
   font-size: 1.8rem;
 }
 /*  Our-Team Section End  ============================== */
+
+
+/* Gellary Section Start ============================== */
+.gellary-img {
+  overflow: hidden;
+}
+.gellary-img img {
+    transition: .5s;
+}
+.gellary-img img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+/*  Gellary Section End  ============================== */
+
+
+/* Contact Section Start ============================== */
+
+/* about */
+#contact-sec .about h1 {
+  font-size: 3.6rem;
+  font-weight: 300;
+  color: #1dc8cd;
+  letter-spacing: 4px;
+}
+#contact-sec .about h4 {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #888888;
+}
+#contact-sec .social-links {
+  margin-top: 3rem;
+}
+#contact-sec .social-links a {
+  display: inline-block;
+  background: #fff;
+  padding: 8px 0;
+  margin-right: 4px;
+  color: #1dc8cd;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  line-height: 1;
+  border: 1px solid #1dc8cd;
+  border-radius: 50%;
+}
+#contact-sec .social-links a:hover { 
+  color: #fff;
+  background: #1dc8cd;
+}
+
+/* Info --- */
+#contact-sec .info-box {
+  margin-bottom: 4rem;
+  padding: 3px 0;
+}
+#contact-sec .info-box .icon {
+  float: left;
+  font-size: 3.2rem;
+  line-height: 0;
+  color: #1dc8cd;
+}
+#contact-sec .info-box .text {
+  margin-left: 5rem;
+  font-size: 14px;
+}
+#contact-sec .info-box .text p {
+  margin-bottom: 0;
+  color: #333333;
+}
+
+/* form --- */
+
+#contact-sec input, #contact-sec textarea {
+  font-size: 14px;
+  padding: 5px 13px;
+  border: 1px solid #ced4da;
+  margin-bottom: 18px;
+}
+#contact-sec .form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+#contact-sec .form-group input {
+  width: 49%;
+}
+#contact-sec textarea {
+  min-height: 120px;
+}
+#contact-sec .btn {
+  padding: 10px 20px;
+}
+/*  Contact Section End  ============================== */
+
+
+
+
+
+
+
+
