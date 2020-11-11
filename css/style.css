@@ -412,7 +412,10 @@ img.product-screen3 {
 
 
 /* Product-Feature Section Start ============================== */
-
+/* .product-left */
+.product-left img {
+  padding-top: 25px;
+}
 
 /* product-right */
 .product-feature-box.text-center {
@@ -549,6 +552,15 @@ img.product-screen3 {
 }
 .pricing-box.featured .btn {
   background: linear-gradient(45deg, #1de099, #1dc8cd);
+  border: 1px solid transparent;
+  transition: .5s ;
+  -webkit-transition: .5s ;
+  -moz-transition: .5s ;
+  -ms-transition: .5s ;
+  -o-transition: .5s ;
+}
+.pricing-box.featured .btn:hover {
+  border: 1px solid rgb(89, 0, 255);
 }
 .pricing-box h3 {
   font-size: 2.8rem;
@@ -757,6 +769,17 @@ img.product-screen3 {
 }
 #contact-sec .btn {
   padding: 10px 20px;
+  border: 2px solid transparent;
+  background: linear-gradient(45deg, #1de099, #1dc8cd);
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+#contact-sec .btn:hover {
+  background-position: 63px;
+  border: 2px solid rgb(17, 12, 3);
 }
 /*  Contact Section End  ============================== */
 
