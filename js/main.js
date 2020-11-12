@@ -147,14 +147,27 @@
 
 
 
-// WOW active-------------------
+// WOW active ---------------------------------------
 new WOW().init();
 
+// Get Started btn function-------------------------
+  var introHeight = $('#intro-sec').height()
+  var headerHeight = $('#header').height()
+  $('.scrollTo').click(function(){
+    $({myScrollTop:window.pageYOffset}).animate({myScrollTop:introHeight-headerHeight}, {
+    duration: 100,
+    easing: 'swing',
+    step: function(val) {
+      window.scrollTo(0, val);
+    }
+  });
+  })
 
 
 
 
 // Header  Background Add After Scroll ----------------------------
+
 $(window).on('scroll', function () {
   var headerHeight = $('#header').outerHeight()
   if ($(this).scrollTop() > 100) {
