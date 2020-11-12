@@ -133,7 +133,6 @@
 // 	event.preventDefault();
 // });
 
-
 // scrollToTop-----------
 // $.scrollUp({
 // 	scrollName: 'scrollUp', // Element ID
@@ -147,54 +146,65 @@
 // });
 
 
+
 // WOW active-------------------
-// new WOW().init();
+new WOW().init();
 
 
-// navbar dropdown hover function
-const $dropdown = $(".dropdown");
-const $dropdownToggle = $(".dropdown-toggle");
-const $dropdownMenu = $(".dropdown-menu");
-const showClass = "show";
 
-$(window).on("load resize", function() {
-  if (this.matchMedia("(min-width: 768px)").matches) {
-    $dropdown.hover(
-      function() {
-        const $this = $(this);
-        $this.addClass(showClass);
-        $this.find($dropdownToggle).attr("aria-expanded", "true");
-        $this.find($dropdownMenu).addClass(showClass);
-      },
-      function() {
-        const $this = $(this);
-        $this.removeClass(showClass);
-        $this.find($dropdownToggle).attr("aria-expanded", "false");
-        $this.find($dropdownMenu).removeClass(showClass);
-      }
-    );
-  } else {
-    $dropdown.off("mouseenter mouseleave");
-  }
-});
 
-// Header  Background Add After Scroll
+
+// Header  Background Add After Scroll ----------------------------
 $(window).on('scroll', function () {
-  var headerHeight = $('#header').height()
-  if ($(window).scrollTop() > 100) {
-      // $('#header').addClass('grd-bg');
+  var headerHeight = $('#header').outerHeight()
+  if ($(this).scrollTop() > 100) {
       $('#header').css({"padding":"0px"})
       $('.header-bg').css({"height": headerHeight})
   } else {
-      // $('#header').removeClass('grd-bg');
       $('#header').css({"padding":"10px"})
       $('.header-bg').css({"height":"0px"})
   }
 });
 
-// FAQ Accordion Icon Change After Click
+// Back-to-top Button Visible -----------------------------
+$(window).on('scroll', function () {
+  if ($(this).scrollTop() > 500) {
+      $('.back-to-top').fadeIn('slow');
+  } else {
+      $('.back-to-top').fadeOut('slow');
+  }
+});
+
+// Back to top scroll function ----------------------------
+$('.back-to-top').fadeIn().click(function() {
+  $('html,body').animate({
+    scrollTop: 0
+  }, 100);
+
+});
+
+// FAQ Accordion Card Icon Change After Click ---------------------------
 $('#faq-sec .card-header .btn.btn-link').click(function(){
   $(this).toggleClass('active')
 })
+
+// Gallery - uses the magnific popup jQuery plugin
+  $('.gallery-popup').magnificPopup({
+    type: 'image',
+    removalDelay: 300,
+    mainClass: 'mfp-fade',
+    gallery: {
+      enabled: true
+    },
+    zoom: {
+      enabled: true,
+      duration: 300,
+      easing: 'ease-in-out',
+      opener: function(openerElement) {
+        return openerElement.is('img') ? openerElement : openerElement.find('img');
+      }
+    }
+  });
+
 
 })(jQuery);
