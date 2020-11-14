@@ -76,6 +76,7 @@
   #header {
     background: linear-gradient(45deg, #1de099, #1dc8cd);
     padding: 0;
+    top: 0;
   }
 
   /* intro --- */
