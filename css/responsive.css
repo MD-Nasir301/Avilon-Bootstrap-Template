@@ -74,6 +74,150 @@
     background: linear-gradient(45deg, #1de099, #1dc8cd);
     padding: 0;
   }
+
+  /* intro --- */
+  .intro-text h1 {
+    font-size: 3.8rem;
+  }
+  .intro-text p {
+    font-size: 2rem;
+  }
+  .product-screen1 {
+    left: 0;
+    width: 100%;
+  }
+
+  /* about-us --- */
+  .about-left img {
+    margin-bottom: 2rem;
+  }
+  .about-right h3 {
+    font-size: 2.2rem;
+  }
+
+  /* product-feature --- */
+  #product-feature-sec {
+    padding-bottom: 2rem;
+  }
+  /* advanced-feature --- */
+  .advanced-feature-row.row1 .row,
+  .advanced-feature-row.row3 .row {
+    flex-direction: column-reverse;
+  }
+  .advanced-feature-row img {
+    margin-bottom: 2rem;
+  }
+
+  /* CTA  --- */
+  #cta-sec {
+    padding: 50px 0;
+  }
+  .cta-text h3 {
+    text-align: center;
+  }
+  .cta-btn.text-center {
+    margin-top: 2rem;
+  }
+
+  /* more-feature --- */
+  .more-feature-box {
+    margin: 10px 0;
+    padding: 30px 30px 30px;
+  }
+  .more-feature-box .icon {
+    float: none;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .more-feature-box .text {
+    margin-left: 0;
+  }
+  .more-feature-box .text h4 {
+    text-align: center;
+  }
+  .more-feature-box .text p {
+    text-align: justify;
+  }
+
+  /* client --- */
+  #clients-sec {
+    padding-bottom: 25px;
+  }
+  .client img {
+    margin-bottom: 2rem;
+  }
+
+  /* Pricing --- */
+  #pricing-sec {
+    padding-bottom: 4rem;
+  }
+  .pricing-box {
+    margin-bottom: 2rem;
+    padding: 30px;
+  }
+  #faq-sec .card-header .btn::after {
+    right: -10px;
+  }
+  #pricing-sec .sec-heading {
+    margin-bottom: 40px;
+  }
+
+  /* faq` --- */
+  #faq-sec .sec-heading {
+    margin-bottom: 40px;
+  }
+  #faq-sec .card-header .btn {
+    font-size: 1.8rem;
+    letter-spacing: 0px;
+  }
+
+  /* our-team --- */
+  #our-team-sec {
+    padding-bottom: 2rem;
+}
+  .team-member.text-center {
+    margin-bottom: 4rem;
+  }
+
+  /* Gallery --- */
+  #gallery-sec .sec-heading {
+    margin-bottom: 4rem;
+  }
+
+  /* contact --- */
+  #contact-sec {
+    text-align: center;
+  }
+  #contact-sec .social-links {
+    margin: 2rem 0;
+  }
+  #contact-sec .info-box .icon {
+    float: none;
+  }
+  #contact-sec .info-box .text {
+    margin-left: 0rem;
+  }
+  #contact-sec .info-area {
+    margin: 2rem 0 4rem;
+  }
+  #contact-sec .info-box {
+    margin-bottom: 1rem;
+  }
+
+  /* footer --- */
+  .footer-links ul {
+    float: none;
+    margin-top: 2rem;
+  }
+  .footer-links ul li {
+    margin: 4px 5px;
+  }
+
+  .back-to-top {
+    background: url(../img/back-ot-top.png);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
 }
 
 /* Large Mobile :480px. (sm) */
@@ -81,4 +225,11 @@
   .container {
     width: 450px;
   }
+  
+  /* pricing --- */
+  .pricing-box {
+    padding: 40px 60px;
+}
+
+
 }

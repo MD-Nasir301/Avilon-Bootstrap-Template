@@ -142,33 +142,29 @@
   // Get Started btn function ===================================
   var introHeight = $("#intro-sec").height();
   var headerHeight = $("#header").height();
-  $(".scrollTo").click(function () {
-    $({ myScrollTop: window.pageYOffset }).animate(
-      { myScrollTop: introHeight - headerHeight },
+
+  $(".getStarted").click(function () {
+    $("html,body").animate(
       {
-        duration: 100,
-        easing: "swing",
-        step: function (val) {
-          window.scrollTo(0, val);
-        },
-      }
-    );
+        scrollTop: introHeight-headerHeight
+      },100
+    )
   });
+
 
   // Header  Background Add After Scroll =================================
   $(window).on("scroll", function () {
     if ($(window).width() > 991) {
-      var headerHeight = $("#header").outerHeight();
       if ($(this).scrollTop() > 100) {
-        $("#header").css({ padding: "0px" });
-        $(".header-bg").css({ height: headerHeight });
+        $("#header").css({ top: "0px" });
+        $(".header-bg").css({ height: headerHeight }); // "headerHeight" Global Variable From "Get Started btn function"
       } else {
-        $("#header").css({ padding: "10px" });
+        $("#header").css({ top: "10px" });
         $(".header-bg").css({ height: "0px" });
       }
     } else {
       $(".header-bg").css({ height: "0px" });
-      $("#header").css({ padding: "0px" });
+      $("#header").css({ top: "0px" });
     }
   });
 
@@ -182,15 +178,15 @@
   });
 
   // Back to top scroll function =====================================
-  $(".back-to-top")
-    .fadeIn()
-    .click(function () {
+  $(".back-to-top").click(function () {
+
       $("html,body").animate(
         {
           scrollTop: 0,
         },
         100
       );
+
     });
 
   // FAQ Accordion Card Icon Change After Click ===============================
