@@ -17,6 +17,9 @@
     display: none;
   }
   /* intro  */
+  #intro-sec {
+    max-height: 700px;
+  }
   img.product-screen1 {
     left: 57%;
   }
