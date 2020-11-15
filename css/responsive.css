@@ -75,6 +75,7 @@
 @media (max-width: 767px) {
   .more-feature-box .icon i.text-grd {
     background: rgb(99, 196, 235);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
