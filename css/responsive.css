@@ -72,12 +72,19 @@
 }
 
 /* small mobile :320px.(xs) */
-@media (max-width: 767px) {
-  .more-feature-box .icon i {
-    background: none;
-    background-clip: none;
-    -webkit-background-clip: none;
-    -webkit-text-fill-color: blue;
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+.dropdown ul {
+  position: relative;
+  display: none;
+}
+.dropdown ul li a {
+  color: #fff;
+}
+li.nav-item.dropdown:hover > ul {
+  display: block;
+  left: 0;
+  top: 0;
+  background: rgb(41, 41, 40);
 }
 
   /* header --- */
