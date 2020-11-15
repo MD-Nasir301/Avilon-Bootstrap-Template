@@ -20,6 +20,23 @@
 10. footer
 */
 
+
+.text-clip {
+  height: 200px;
+  padding: 50px;
+
+}
+.text-clip h1 {
+  font-size: 200px;
+  font-weight: 700;
+  text-align: center;
+  background:url('../img/gallery/gallery-1.jpg');
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+}
+
 /* 1. Theme default css */
 html {
   overflow-x:hidden;

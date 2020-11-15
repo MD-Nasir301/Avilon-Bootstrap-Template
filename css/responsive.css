@@ -73,12 +73,13 @@
 
 /* small mobile :320px.(xs) */
 @media (max-width: 767px) {
-  /* .more-feature-box .icon i.text-grd {
-    background: rgb(99, 196, 235);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} */
+  .more-feature-box .icon i {
+    background: none;
+    background-clip: none;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: blue;
+}
+
   /* header --- */
   #header {
     background: linear-gradient(45deg, #1de099, #1dc8cd);
@@ -234,11 +235,10 @@
 
 /* Large Mobile :480px. (sm) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  
+
   /* pricing --- */
   .pricing-box {
     padding: 40px 60px;
 }
-
 
 }
