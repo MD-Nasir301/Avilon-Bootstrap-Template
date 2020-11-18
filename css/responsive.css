@@ -44,6 +44,9 @@
     left: 0;
     right: 0;
     z-index: 55555;
+    max-height: 50vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling:touch; 
   }
   i.fas.fa-angle-down {
     display: none;
@@ -130,7 +133,7 @@
     left: 0;
     right: 0;
     z-index: 55555;
-    max-height: 400px;
+    max-height: 50vh;
     overflow-y: auto;
     -webkit-overflow-scrolling:touch; 
   }
