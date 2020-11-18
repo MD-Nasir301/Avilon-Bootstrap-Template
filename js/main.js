@@ -139,18 +139,19 @@
   // WOW active ========================================
   new WOW().init();
 
-  // Get Started btn function ===================================
+  // Global Variables
   var introHeight = $("#intro-sec").height();
   var headerHeight = $("#header").height();
 
+  // Get Started btn function ===================================
   $(".getStarted").click(function () {
     $("html,body").animate(
       {
-        scrollTop: introHeight-headerHeight
-      },100
-    )
+        scrollTop: introHeight - headerHeight,
+      },
+      100
+    );
   });
-
 
   // Header  Background Add After Scroll =================================
   $(window).on("scroll", function () {
@@ -162,9 +163,6 @@
         $("#header").css({ top: "10px" });
         $(".header-bg").css({ height: "0px" });
       }
-    } else {
-      $(".header-bg").css({ height: "0px" });
-      $("#header").css({ top: "0px" });
     }
   });
 
@@ -179,15 +177,13 @@
 
   // Back to top scroll function =====================================
   $(".back-to-top").click(function () {
-
-      $("html,body").animate(
-        {
-          scrollTop: 0,
-        },
-        100
-      );
-
-    });
+    $("html,body").animate(
+      {
+        scrollTop: 0,
+      },
+      100
+    );
+  });
 
   // FAQ Accordion Card Icon Change After Click ===============================
   $("#faq-sec .card-header .btn.btn-link").click(function () {
@@ -196,6 +192,8 @@
 
   // Gallery - uses the magnific popup jQuery plugin ===========================
   $(".gallery-popup").magnificPopup({
+
+
     type: "image",
     removalDelay: 300,
     mainClass: "mfp-fade",
@@ -213,4 +211,12 @@
       },
     },
   });
+
+
+  $('#menu').slicknav();
+
+
+
+
+
 })(jQuery);
