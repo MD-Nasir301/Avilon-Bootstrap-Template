@@ -22,9 +22,12 @@
 
 /* Tablet desktop :768px. (md) ========================================================================*/
 @media (min-width: 768px) and (max-width: 991px) {
-  /* header --- */
 
+  /* header --- */
   #header {
+    display: none;
+  }
+  .header-bg {
     display: none;
   }
   .dropdown ul {
@@ -44,9 +47,12 @@
     left: 0;
     right: 0;
     z-index: 55555;
-    max-height: 50vh;
+    max-height: 400px;
     overflow-y: auto;
     -webkit-overflow-scrolling:touch; 
+  }
+  .slicknav_menu::-webkit-scrollbar {
+    width: 0px;
   }
   i.fas.fa-angle-down {
     display: none;
@@ -116,6 +122,9 @@
   #header {
     display: none;
   }
+  .header-bg {
+    display: none;
+  }
   .dropdown ul {
     position: static;
     padding-left: 0;
@@ -133,9 +142,12 @@
     left: 0;
     right: 0;
     z-index: 55555;
-    max-height: 50vh;
+    max-height: 400px;
     overflow-y: auto;
     -webkit-overflow-scrolling:touch; 
+  }
+  .slicknav_menu::-webkit-scrollbar {
+    width: 0px;
   }
   .slicknav_menu .slicknav_icon {
     margin: 2px;
@@ -149,7 +161,6 @@
   i.fas.fa-chevron-left {
     display: none;
   }
-
 
   /* intro --- */
   .intro-text h1 {
