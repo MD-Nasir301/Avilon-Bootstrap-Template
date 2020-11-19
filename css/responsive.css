@@ -22,7 +22,6 @@
 
 /* Tablet desktop :768px. (md) ========================================================================*/
 @media (min-width: 768px) and (max-width: 991px) {
-
   /* header --- */
   #header {
     display: none;
@@ -30,7 +29,7 @@
   .header-bg {
     display: none;
   }
-  
+
   .dropdown ul {
     position: static;
     padding-left: 0;
@@ -43,24 +42,24 @@
     -o-transition: 0s;
   }
   .slicknav_menu {
-    background: linear-gradient( 45deg, rgb(29 224 153), rgb(29 200 205) );
+    background: linear-gradient(45deg, rgb(29 224 153), rgb(29 200 205));
     position: fixed;
     left: 0;
     right: 0;
     z-index: 55555;
     max-height: 400px;
     overflow-y: auto;
-    -webkit-overflow-scrolling:touch; 
+    -webkit-overflow-scrolling: touch;
   }
   .slicknav_menu:before {
-    content: 'AVILON';
+    content: "AVILON";
     position: absolute;
     color: #fff;
     font-size: 3rem;
     left: 1rem;
-    top: .3rem;
+    top: 0.3rem;
     font-weight: 300;
-}
+  }
   .slicknav_menu::-webkit-scrollbar {
     width: 0px;
   }
@@ -147,24 +146,24 @@
     -o-transition: 0s;
   }
   .slicknav_menu {
-    background: linear-gradient( 45deg, rgb(29 224 153), rgb(29 200 205) );
+    background: linear-gradient(45deg, rgb(29 224 153), rgb(29 200 205));
     position: fixed;
     left: 0;
     right: 0;
     z-index: 55555;
     max-height: 400px;
     overflow-y: auto;
-    -webkit-overflow-scrolling:touch; 
+    -webkit-overflow-scrolling: touch;
   }
   .slicknav_menu:before {
-    content: 'AVILON';
+    content: "AVILON";
     position: absolute;
     color: #fff;
     font-size: 3rem;
     left: 1rem;
-    top: .3rem;
+    top: 0.3rem;
     font-weight: 300;
-}
+  }
   .slicknav_menu::-webkit-scrollbar {
     width: 0px;
   }
