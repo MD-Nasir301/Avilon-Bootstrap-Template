@@ -147,7 +147,7 @@
   $(".getStarted").click(function () {
     $("html,body").animate(
       {
-        scrollTop: introHeight - headerHeight,
+        scrollTop: introHeight - headerHeight, //there has two variables from "Global Variables"
       },
       100
     );
