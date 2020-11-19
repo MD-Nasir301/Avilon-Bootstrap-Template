@@ -125,11 +125,6 @@
   .header-bg {
     display: none;
   }
-  .navbar-brand {
-    position: fixed;
-    top: 0;
-    left: 50px;
-  }
   .dropdown ul {
     position: static;
     padding-left: 0;
