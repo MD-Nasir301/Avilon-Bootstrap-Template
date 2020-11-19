@@ -9,7 +9,7 @@
   }
 }
 
-/* Normal desktop :992px. (lg) */
+/* Normal desktop :992px. (lg) =================================================================== */
 @media (min-width: 992px) and (max-width: 1200px) {
   .slicknav_menu {
     *zoom: 1;
@@ -56,10 +56,13 @@
     position: absolute;
     color: #fff;
     font-size: 3rem;
-    left: 1rem;
+    left: 5%;
     top: 0.3rem;
     font-weight: 300;
   }
+  .slicknav_btn {
+    margin: 4px 25px 6px;
+}
   .slicknav_menu::-webkit-scrollbar {
     width: 0px;
   }
@@ -160,10 +163,13 @@
     position: absolute;
     color: #fff;
     font-size: 3rem;
-    left: 1rem;
+    left: 5%;
     top: 0.3rem;
     font-weight: 300;
   }
+  .slicknav_btn {
+    margin: 4px 25px 6px;
+}
   .slicknav_menu::-webkit-scrollbar {
     width: 0px;
   }
