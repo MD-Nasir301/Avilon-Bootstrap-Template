@@ -30,6 +30,7 @@
   .header-bg {
     display: none;
   }
+  
   .dropdown ul {
     position: static;
     padding-left: 0;
@@ -51,6 +52,15 @@
     overflow-y: auto;
     -webkit-overflow-scrolling:touch; 
   }
+  .slicknav_menu:before {
+    content: 'AVILON';
+    position: absolute;
+    color: #fff;
+    font-size: 3rem;
+    left: 1rem;
+    top: .3rem;
+    font-weight: 300;
+}
   .slicknav_menu::-webkit-scrollbar {
     width: 0px;
   }
@@ -146,6 +156,15 @@
     overflow-y: auto;
     -webkit-overflow-scrolling:touch; 
   }
+  .slicknav_menu:before {
+    content: 'AVILON';
+    position: absolute;
+    color: #fff;
+    font-size: 3rem;
+    left: 1rem;
+    top: .3rem;
+    font-weight: 300;
+}
   .slicknav_menu::-webkit-scrollbar {
     width: 0px;
   }
