@@ -56,9 +56,9 @@
   });
 
   // Gallery - uses the magnific popup jQuery plugin ===========================
-  $(".gallery-popup").magnificPopup({
+  $(".gallery-img").magnificPopup({
 
-
+    delegate: 'a',
     type: "image",
     removalDelay: 300,
     mainClass: "mfp-fade",
